@@ -1,5 +1,7 @@
 {
   "name": "NYC Trip Planner",
   "description": "An interactive web application to organize and track a 5-day trip to New York City, based on a personalized itinerary. It features a real-time activity tracker, detailed daily schedules, and essential travel information.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [
+    "geolocation"
+  ]
 }
