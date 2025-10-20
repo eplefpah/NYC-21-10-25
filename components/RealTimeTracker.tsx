@@ -87,14 +87,14 @@ const RealTimeTracker: React.FC<RealTimeTrackerProps> = ({ itinerary }) => {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 bg-sky-500 text-white rounded-full p-4 shadow-lg hover:bg-sky-600 transition-transform transform hover:scale-110 z-30"
+        className="fixed bottom-6 left-6 bg-sky-500 text-white rounded-full p-4 shadow-lg hover:bg-sky-600 transition-transform transform hover:scale-110 z-30"
         aria-label="Toggle real-time tracker"
       >
         {isOpen ? <XMarkIcon /> : <LocationMarkerIcon />}
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 max-w-[calc(100vw-3rem)] bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-4 z-30 animate-fade-in-up">
+        <div className="fixed bottom-24 left-6 w-80 max-w-[calc(100vw-3rem)] bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-4 z-30 animate-fade-in-up">
             <h4 className="font-bold text-lg text-white mb-3 border-b border-slate-700 pb-2 flex items-center gap-2">
                 <ChevronDoubleRightIcon/> Suivi en direct
             </h4>
